@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  min-height: 100vh; 
+  display: flex; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg"); 
+  flex-direction: column;
+  color: white; 
 }
 
-.App-link {
-  color: #61dafb;
+body h2 {
+  font-size: 40px; 
+  font-family: Droid serif; 
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body h1 {
+  font-family: Montserrat; 
+  font-size: 75px; 
+  margin-top: 5px;
 }
+
+body button {
+  padding: 20px 40px; 
+  font-family: Montserrat; 
+  font-weight: 650; 
+  color: white; 
+  background-color: #FED137;
+  font-size: 18px; 
+  border-radius: 10px;
+}
+
+header {
+  height: 90px; 
+  width: 100vw; 
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  left: 0;
+  background-color: #2A2A2C; 
+  display: flex;
+  padding: 16px 25px; 
+}
+
+header > div {
+  height: 100%; 
+  width: 50%; 
+  max-width: 1000px; 
+  padding: 0 20px; 
+  margin: 0 auto;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div h1 {
+  color: #FED137; 
+  font-family: 'Kaushan Script', cursive;
+  font-size: 28px; 
+}
+
+header nav {
+  flex-direction: column;
+}
+
+header nav ul {
+  min-width: 400px; 
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  font-size: 90%; 
+  font-family: Montserrat; 
+  letter-spacing: 1px; 
+}
+
+header nav ul li {
+  color: white; 
+  text-decoration: none;
+  padding: 20px; 
+}
+
+@media screen and (max-width: 700px) {
+  header nav {
+    min-height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    transform: translate(300px, 0);
+  }
+  header .show {
+    transform: translate(0,0); 
+    transition: .5s; 
+    transition-timing-function: ease-in-out;
+  }
+  
+  header nav ul {
+  flex-direction: column;
+  min-width: 300px; 
+  height: 300px; 
+  padding: 90px; 
+  justify-content: space-evenly;
+ }
+ body {
+   background-size: 50%; 
+ }
+}
+
+@media screen and (max-width: 950px) {
+  header nav {
+    min-height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    transform: translate(550px, 0);
+  }
+  header .show {
+    transform: translate(0,0); 
+    transition: .5s; 
+    transition-timing-function: ease-in-out;
+  }
+  
+  header nav ul {
+  flex-direction: column;
+  min-width: 550px; 
+  height: 550px; 
+  padding: 90px; 
+  justify-content: space-evenly;
+ }
+}
+
