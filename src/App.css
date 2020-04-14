@@ -105,26 +105,3 @@ header nav ul li {
  }
 }
 
-@media screen and (max-width: 950px) {
-  header nav {
-    min-height: 100vh; 
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    transform: translate(550px, 0);
-  }
-  header .show {
-    transform: translate(0,0); 
-    transition: .5s; 
-    transition-timing-function: ease-in-out;
-  }
-  
-  header nav ul {
-  flex-direction: column;
-  min-width: 550px; 
-  height: 550px; 
-  padding: 90px; 
-  justify-content: space-evenly;
- }
-}
-
