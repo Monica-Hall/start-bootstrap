@@ -102,12 +102,11 @@ body h1 {
   margin-top: 5px;
 }
 body button {
-  padding: 10px 20px; 
+  padding: 20px 40px; 
   font-family: Montserrat; 
-  font-weight: 650; 
   color: white; 
   background-color: #FED137;
-  font-size: 16px; 
+  font-size: 20px; 
   border-radius: 10px;
 }
 header {
