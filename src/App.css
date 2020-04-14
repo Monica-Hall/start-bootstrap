@@ -80,28 +80,94 @@ header nav ul li {
 }
 
 @media screen and (max-width: 700px) {
-  header nav {
-    min-height: 100vh; 
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    transform: translate(300px, 0);
-  }
-  header .show {
-    transform: translate(0,0); 
-    transition: .5s; 
-    transition-timing-function: ease-in-out;
-  }
-  
-  header nav ul {
-  flex-direction: column;
-  min-width: 300px; 
-  height: 300px; 
-  padding: 90px; 
-  justify-content: space-evenly;
- }
  body {
-   background-size: 50%; 
- }
+  background-size: 250%; 
+  min-height: 45vh;
+  min-height: 100vh; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg"); 
+  flex-direction: column;
+  color: white; 
+}
+body h2 {
+  font-size: 20px; 
+  font-family: Droid serif; 
+  margin-bottom: 0;
+}
+body h1 {
+  font-family: Montserrat; 
+  font-size: 33px; 
+  margin-top: 5px;
+}
+body button {
+  padding: 10px 20px; 
+  font-family: Montserrat; 
+  font-weight: 650; 
+  color: white; 
+  background-color: #FED137;
+  font-size: 16px; 
+  border-radius: 10px;
+}
+header {
+  height: 45px; 
+  width: 50vw; 
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  left: 0;
+  background-color: #2A2A2C; 
+  display: flex;
+  padding: 8px 12.5px;
+}
+header > div {
+  height: 100%; 
+  width: 50%; 
+  max-width: 1000px; 
+  padding: 0 20px; 
+  margin: 0 auto;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+header div h1 {
+  color: #FED137; 
+  font-family: 'Kaushan Script', cursive;
+  font-size: 15px; 
+}
+header nav {
+  flex-direction: column;
+  min-height: 100vh; 
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  transform: translate(300px, 0);
+}
+header nav ul {
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center; 
+  font-size: 90%; 
+  font-family: Montserrat; 
+  letter-spacing: 1px; 
+
+  flex-direction: column;
+  min-width: 150px; 
+  height: 150px; 
+  padding: 90px; 
+}
+
+header nav ul li {
+  color: white; 
+  text-decoration: none;
+  padding: 20px; 
+}
+
+header .show {
+  transform: translate(0,0); 
+  transition: .5s; 
+  transition-timing-function: ease-in-out;
+}
 }
 
