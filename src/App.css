@@ -44,6 +44,7 @@ body > button {
   left: 0;
   background-color: transparent; 
   display: flex;
+  flex-direction: row;
   padding: 25px; 
 }
 
@@ -53,8 +54,8 @@ body > button {
   margin-left: 100px;
   padding: 0 30px; 
   display: flex; 
-  justify-content: space-between;
   align-items: center;
+
 }
 
 .logo{
@@ -64,106 +65,90 @@ body > button {
 }
 
 
-.links{
-  min-width: 400px; 
-  display: flex; 
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; 
-  font-size: 90%; 
-  font-family: Montserrat; 
-  letter-spacing: 1px; 
-}
-
-
-/* @media screen and (max-width: 700px) {
- body {
-  background-size: 250%; 
-  min-height: 45vh;
-  min-height: 100vh; 
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg"); 
-  flex-direction: column;
-  color: white; 
-}
-body h2 {
-  font-size: 20px; 
-  font-family: Droid serif; 
-  margin-bottom: 0;
-}
-body h1 {
-  font-family: Montserrat; 
-  font-size: 33px; 
-  margin-top: 5px;
-}
-body button {
-  padding: 20px 40px; 
-  font-family: Montserrat; 
-  color: white; 
-  background-color: #FED137;
-  font-size: 20px; 
-  border-radius: 10px;
-}
-header {
-  height: 45px; 
-  width: 50vw; 
-  position: fixed; 
-  top: 0; 
-  right: 0; 
-  left: 0;
-  background-color: #2A2A2C; 
-  display: flex;
-  padding: 8px 12.5px;
-}
-header > div {
+.right-header {
   height: 100%; 
-  width: 50%; 
-  max-width: 1000px; 
-  padding: 0 20px; 
-  margin: 0 auto;
+  width: 30%; 
+  margin-right: 250px;
+  padding: 0 30px; 
   display: flex; 
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 }
-header div h1 {
-  color: #FED137; 
-  font-family: 'Kaushan Script', cursive;
-  font-size: 15px; 
-}
-header nav {
-  flex-direction: column;
-  min-height: 100vh; 
-  position: fixed; 
-  top: 0; 
-  right: 0; 
-  transform: translate(300px, 0);
-}
-header nav ul {
-  display: flex; 
-  justify-content: space-evenly;
-  align-items: center; 
-  font-size: 90%; 
-  font-family: Montserrat; 
-  letter-spacing: 1px; 
 
-  flex-direction: column;
-  min-width: 150px; 
-  height: 150px; 
-  padding: 90px; 
+.right-header > div {
+  margin: 20px; 
 }
 
-header nav ul li {
-  color: white; 
+
+
+.links-container {
+  flex-direction: row;
+  width: 100%; 
   text-decoration: none;
-  padding: 20px; 
 }
 
-header .show {
-  transform: translate(0,0); 
-  transition: .5s; 
-  transition-timing-function: ease-in-out;
-}
-} */
 
+@media screen and (max-width: 990px) {
+  body > h2 {
+    font-size: 25px; 
+  }
+
+  body > h1 {
+    font-size: 50px; 
+  }
+  
+  body > button {
+    padding: 20px 40px; 
+    font-weight: 450; 
+    background-color: #FED137;
+    font-size: 14px; 
+    border-radius: 10px;
+  }
+
+  .header {
+    background-color: #212528; 
+    height: 40px; 
+
+  }
+  
+  
+  .left-header {
+    height: 100%; 
+    width: 20%; 
+    margin-left: 100px;
+    padding: 0 30px; 
+    display: flex; 
+    align-items: center;
+  
+  }
+  
+  .logo{
+    color: #FED137; 
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px; 
+  }
+  
+  
+  .right-header {
+    color: #212528;
+  }
+  
+  .menu-button {
+    padding: 20px 40px; 
+    font-weight: 450; 
+    background-color: #FED137;
+    font-size: 14px; 
+    border-radius: 10px;
+    margin-right: 200px;
+
+  }
+  
+  
+  
+  .links-container {
+    flex-direction: row;
+    width: 100%; 
+    text-decoration: none;
+  }
+
+}
